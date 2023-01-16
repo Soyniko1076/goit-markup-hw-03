@@ -1,0 +1,222 @@
+:root {
+  /* colors */
+  --primary-background: #ffffff;
+  --primary-brand: #4d5ae5;
+  --pressed-state: #404bbf;
+  --dark: #2e2f42;
+  --text: #434455;
+  --accent: #e7e9fc;
+  --light: #f4f4fd;
+}
+
+body {
+  background-color: var(--primary-background);
+  color: var(--dark);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.02em;
+  font-size: 16px;
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* ------------------header sectoin---------------*/
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo-item {
+  color: var(--primary-brand);
+}
+.logo-syllable {
+  color: var(--dark);
+}
+
+.nav-list {
+  line-height: 1.5;
+}
+
+.nav-list-link {
+  font-weight: 500;
+  color: var(--dark);
+}
+
+.current {
+  color: var(--primary-brand);
+}
+
+.contact-list-link {
+  color: var(--text);
+}
+
+.nav-list-link:hover,
+.nav-list-link:focus,
+.contact-list-link:hover,
+.contact-list-link:focus {
+  color: var(--primary-brand);
+}
+
+/* -----------------------hero----------------------- */
+
+.hero {
+  background-color: var(--dark);
+}
+.main-title {
+  font-weight: 700;
+  font-size: 56px;
+  letter-spacing: 0.02em;
+  line-height: 1.07;
+  text-align: center;
+  color: var(--primary-background);
+}
+
+.hero-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-background);
+  background-color: var(--primary-brand);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--primary-background);
+  background-color: var(--pressed-state);
+}
+
+/* ------------------advantages------------------------ */
+.advantages-slogan {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.advantages-text {
+  line-height: 1.5;
+  color: var(--text);
+}
+
+/* ----------------features---------------------- */
+.features-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+}
+
+/* ------------------------teem----------------------*/
+.teem-section {
+  background-color: var(--light);
+}
+
+.teem-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+}
+
+.teem-list-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.teem-list-profession {
+  line-height: 1.5;
+  text-align: center;
+  color: var(--text);
+}
+
+/*----------------------PORTFOLIO------------------ */
+
+/*---------------------- filter --------------------*/
+
+.filter-list {
+  text-align: center;
+}
+.filter-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-brand);
+  background-color: var(--light);
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--primary-background);
+  background-color: var(--pressed-state);
+}
+
+/* ---------------------examples------------------- */
+.examples-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.examples-text {
+  line-height: 1.5;
+  color: var(--text);
+}
+
+/* -----------------------------footer------------------------------- */
+.footer {
+  background-color: var(--dark);
+}
+
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-logo-syllable-secondary {
+  color: var(--light);
+}
+
+.footer-text {
+  line-height: 1.5;
+  color: var(--accent);
+}
