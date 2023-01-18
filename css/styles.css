@@ -17,6 +17,66 @@ body {
   font-size: 16px;
 }
 
+/* -------------------reset--------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* 
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+html {
+  height: 100%;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+} */
+
+/* ---------------------reset end------------------ */
+
 .container {
   width: 1158px;
   padding-left: 15px;
@@ -94,15 +154,16 @@ body {
   background-color: var(--dark);
 }
 .main-title {
+  padding-top: 188px;
+  padding-bottom: 292px;
+  height: 120px;
+  right: 473px;
   font-weight: 700;
   font-size: 56px;
   letter-spacing: 0.02em;
   line-height: 1.07;
   text-align: center;
   color: var(--primary-background);
-}
-
-.hero {
 }
 
 .hero-btn {
