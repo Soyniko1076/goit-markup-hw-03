@@ -35,46 +35,6 @@ ul {
   vertical-align: baseline;
 }
 
-/* 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-html {
-  height: 100%;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-} */
-
 /* ---------------------reset end------------------ */
 
 .container {
@@ -148,6 +108,9 @@ table {
   color: var(--primary-brand);
 }
 
+.page-header-container {
+  display: flex;
+}
 /* -----------------------hero----------------------- */
 
 .hero {
@@ -156,8 +119,9 @@ table {
 .main-title {
   padding-top: 188px;
   padding-bottom: 292px;
-  height: 120px;
-  right: 473px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 496px;
   font-weight: 700;
   font-size: 56px;
   letter-spacing: 0.02em;
