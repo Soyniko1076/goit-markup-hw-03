@@ -38,11 +38,9 @@ ul {
 /* ---------------------reset end------------------ */
 
 .container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
   outline: 2px solid red;
   outline-offset: -2px;
 }
@@ -82,6 +80,7 @@ ul {
 }
 .logo-syllable {
   color: var(--dark);
+  margin-right: 76px;
 }
 
 .nav-list {
@@ -89,6 +88,9 @@ ul {
 }
 
 .nav-list-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-weight: 500;
   color: var(--dark);
 }
@@ -98,6 +100,9 @@ ul {
 }
 
 .contact-list-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: var(--text);
 }
 
@@ -110,17 +115,39 @@ ul {
 
 .page-header-container {
   display: flex;
+  align-items: center;
+  margin-bottom: 0px;
 }
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.contact-list-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: auto;
+}
+
 /* -----------------------hero----------------------- */
 
 .hero {
   background-color: var(--dark);
 }
+
+.hero-container {
+  display: block;
+  align-items: center;
+  min-height: 600px;
+}
+
 .main-title {
   padding-top: 188px;
-  padding-bottom: 292px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-bottom: 48px;
+  margin: 0 auto;
   width: 496px;
   font-weight: 700;
   font-size: 56px;
@@ -131,10 +158,11 @@ ul {
 }
 
 .hero-btn {
-  display: inline-block;
-  padding: 16px 32px;
+  display: block;
+  margin: 0 auto;
+  border: none;
   border-radius: 4px;
-
+  padding: 16px 32px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
