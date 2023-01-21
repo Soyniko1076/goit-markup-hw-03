@@ -164,8 +164,7 @@ ul {
 
 .hero-container {
   display: block;
-  align-items: center;
-  min-height: 600px;
+  padding-bottom: 188px;
 }
 
 .main-title {
