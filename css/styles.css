@@ -1,20 +1,33 @@
 :root {
-  /* colors */
-  --primary-background: #ffffff;
+  /* Fonts */
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  /* Text colors */
+
   --primary-brand: #4d5ae5;
   --pressed-state: #404bbf;
   --dark: #2e2f42;
   --text: #434455;
   --accent: #e7e9fc;
   --light: #f4f4fd;
+
+  /* Background colors */
+  --primary-background: #ffffff;
+
+  /* others */
+  --btn-radius: 4px;
+  --indent: 24px;
+  --items: 3;
 }
 
 body {
   background-color: var(--primary-background);
   color: var(--dark);
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--main-font);
   letter-spacing: 0.02em;
   font-size: 16px;
+  width: 1440px;
 }
 
 /* -------------------reset--------------- */
@@ -25,14 +38,28 @@ h3,
 h4,
 h5,
 h6,
-p,
+p {
+  margin: 0;
+}
+
 ul {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* ---------------------reset end------------------ */
@@ -41,8 +68,8 @@ ul {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 1px solid red;
+  outline-offset: -1px; */
 }
 
 .list {
@@ -65,10 +92,22 @@ ul {
   overflow: hidden;
 }
 
+/* card set */
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+
+.card-set-item {
+  flex-basis: calc((100% - (var(--indent) * (var(--items) - 1))) / var(--items));
+}
+
 /* ------------------header sectoin---------------*/
 
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--secondary-font);
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
@@ -116,7 +155,7 @@ ul {
 .page-header-container {
   display: flex;
   align-items: center;
-  margin-bottom: 0px;
+  border-bottom: 1px solid var(--accent);
 }
 
 .nav-container {
@@ -146,8 +185,7 @@ ul {
 
 .main-title {
   padding-top: 188px;
-  padding-bottom: 48px;
-  margin: 0 auto;
+  margin: 0 auto 48px;
   width: 496px;
   font-weight: 700;
   font-size: 56px;
@@ -159,9 +197,10 @@ ul {
 
 .hero-btn {
   display: block;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   border: none;
-  border-radius: 4px;
+  border-radius: var(--btn-radius);
   padding: 16px 32px;
   font-family: inherit;
   font-weight: 500;
@@ -183,7 +222,17 @@ ul {
 }
 
 /* ------------------advantages------------------------ */
+.advantages-list {
+  display: flex;
+  padding: 120px 0;
+  gap: var(--indent);
+}
+
+.advantages-item {
+  width: 264px;
+}
 .advantages-slogan {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -197,12 +246,17 @@ ul {
 
 /* ----------------features---------------------- */
 .features-title {
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
   letter-spacing: 0.02em;
+}
+
+.features-list {
+  padding-bottom: 120px;
 }
 
 /* ------------------------teem----------------------*/
@@ -211,6 +265,8 @@ ul {
 }
 
 .teem-title {
+  padding-top: 120px;
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -218,8 +274,20 @@ ul {
   text-transform: capitalize;
   letter-spacing: 0.02em;
 }
+.teem-list {
+  display: flex;
+  padding-bottom: 120px;
+  gap: var(--indent);
+  --items: 4;
+}
 
+.teem-wrapper {
+  padding: 32px 16px;
+  border-radius: 0px 0px var(--btn-radius) var(--btn-radius);
+  background-color: var(--primary-background);
+}
 .teem-list-name {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -233,14 +301,24 @@ ul {
   color: var(--text);
 }
 
+.soc-list {
+  margin-top: 8px;
+}
 /*----------------------PORTFOLIO------------------ */
 
 /*---------------------- filter --------------------*/
 
 .filter-list {
-  text-align: center;
+  display: flex;
+  gap: var(--indent);
+  justify-content: center;
+  padding-top: 96px;
+  padding-bottom: 72px;
 }
 .filter-btn {
+  padding: 12px 24px;
+  border: 1px solid var(--accent);
+  border-radius: var(--btn-radius);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -257,7 +335,9 @@ ul {
 }
 
 /* ---------------------examples------------------- */
+
 .examples-title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -268,19 +348,26 @@ ul {
   color: var(--text);
 }
 
+.examples-wrapper {
+  padding: 32px 0 32px 16px;
+  margin-bottom: 24px;
+  border: 1px solid var(--accent);
+  border-top: none;
+}
+
+.examples-list {
+  padding-bottom: 96px;
+}
 /* -----------------------------footer------------------------------- */
 .footer {
   background-color: var(--dark);
 }
 
-.footer-container {
-  min-height: 310px;
-}
 .footer-logo {
   display: block;
   padding-top: 100px;
   margin-bottom: 16px;
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17px;
@@ -293,6 +380,7 @@ ul {
 }
 
 .footer-text {
+  padding-bottom: 100px;
   width: 264px;
   line-height: 1.5;
   color: var(--accent);
