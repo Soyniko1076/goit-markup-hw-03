@@ -47,29 +47,14 @@ ul {
   padding: 0;
 }
 
-a {
-  color: currentColor;
-  text-decoration: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 /* ---------------------reset end------------------ */
 
 .container {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-  /* outline: 1px solid red;
-  outline-offset: -1px; */
+  outline: 1px solid red;
+  outline-offset: -1px;
 }
 
 .list {
