@@ -16,7 +16,6 @@
   --primary-background: #ffffff;
 
   /* others */
-  --btn-radius: 4px;
   --indent: 24px;
   --items: 3;
 }
@@ -27,7 +26,6 @@ body {
   font-family: var(--main-font);
   letter-spacing: 0.02em;
   font-size: 16px;
-  width: 1440px;
 }
 
 /* -------------------reset--------------- */
@@ -42,15 +40,31 @@ p {
   margin: 0;
 }
 
-ul {
+ul,
+ol {
   margin: 0;
   padding: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
 /* ---------------------reset end------------------ */
 
+.section {
+  padding: 120px 0;
+}
+
 .container {
-  max-width: 1158px;
+  width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
   outline: 1px solid red;
@@ -92,6 +106,7 @@ ul {
 /* ------------------header sectoin---------------*/
 
 .logo {
+  margin-right: 76px;
   font-family: var(--secondary-font);
   font-size: 18px;
   line-height: 1.33;
@@ -104,7 +119,6 @@ ul {
 }
 .logo-syllable {
   color: var(--dark);
-  margin-right: 76px;
 }
 
 .nav-list {
@@ -140,9 +154,11 @@ ul {
 .page-header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--accent);
 }
 
+.page-header {
+  border-bottom: 1px solid var(--accent);
+}
 .nav-container {
   display: flex;
   align-items: center;
@@ -160,15 +176,11 @@ ul {
 
 .hero {
   background-color: var(--dark);
-}
-
-.hero-container {
-  display: block;
-  padding-bottom: 188px;
+  padding: 188px 0;
+  text-align: center;
 }
 
 .main-title {
-  padding-top: 188px;
   margin: 0 auto 48px;
   width: 496px;
   font-weight: 700;
@@ -183,8 +195,6 @@ ul {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border: none;
-  border-radius: var(--btn-radius);
   padding: 16px 32px;
   font-family: inherit;
   font-weight: 500;
@@ -206,9 +216,9 @@ ul {
 }
 
 /* ------------------advantages------------------------ */
+
 .advantages-list {
   display: flex;
-  padding: 120px 0;
   gap: var(--indent);
 }
 
@@ -239,17 +249,12 @@ ul {
   letter-spacing: 0.02em;
 }
 
-.features-list {
-  padding-bottom: 120px;
-}
-
 /* ------------------------teem----------------------*/
 .teem-section {
   background-color: var(--light);
 }
 
 .teem-title {
-  padding-top: 120px;
   margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
@@ -260,14 +265,13 @@ ul {
 }
 .teem-list {
   display: flex;
-  padding-bottom: 120px;
   gap: var(--indent);
   --items: 4;
 }
 
 .teem-wrapper {
   padding: 32px 16px;
-  border-radius: 0px 0px var(--btn-radius) var(--btn-radius);
+  border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-background);
 }
 .teem-list-name {
@@ -296,13 +300,11 @@ ul {
   display: flex;
   gap: var(--indent);
   justify-content: center;
-  padding-top: 96px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .filter-btn {
   padding: 12px 24px;
   border: 1px solid var(--accent);
-  border-radius: var(--btn-radius);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -319,6 +321,11 @@ ul {
 }
 
 /* ---------------------examples------------------- */
+
+.filter-container {
+  margin-top: 96px;
+  margin-bottom: 96px;
+}
 
 .examples-title {
   margin-bottom: 8px;
@@ -339,22 +346,19 @@ ul {
   border-top: none;
 }
 
-.examples-list {
-  padding-bottom: 96px;
-}
 /* -----------------------------footer------------------------------- */
 .footer {
   background-color: var(--dark);
+  padding: 100px 0;
 }
 
 .footer-logo {
   display: block;
-  padding-top: 100px;
   margin-bottom: 16px;
   font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.17px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -364,7 +368,6 @@ ul {
 }
 
 .footer-text {
-  padding-bottom: 100px;
   width: 264px;
   line-height: 1.5;
   color: var(--accent);
