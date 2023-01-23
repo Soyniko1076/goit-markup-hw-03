@@ -96,7 +96,7 @@ button {
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--indent);
+  gap: 48px var(--indent);
 }
 
 .card-set-item {
@@ -239,6 +239,10 @@ button {
 }
 
 /* ----------------features---------------------- */
+.works {
+  padding-top: 0;
+}
+
 .features-title {
   margin-bottom: 72px;
   font-weight: 700;
@@ -322,9 +326,9 @@ button {
 
 /* ---------------------examples------------------- */
 
-.filter-container {
+.filter-section {
   margin-top: 96px;
-  margin-bottom: 96px;
+  margin-bottom: 120px;
 }
 
 .examples-title {
@@ -341,7 +345,6 @@ button {
 
 .examples-wrapper {
   padding: 32px 0 32px 16px;
-  margin-bottom: 24px;
   border: 1px solid var(--accent);
   border-top: none;
 }
