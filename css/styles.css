@@ -23,9 +23,9 @@
 body {
   background-color: var(--primary-background);
   color: var(--dark);
+  font-size: 16px;
   font-family: var(--main-font);
   letter-spacing: 0.02em;
-  font-size: 16px;
 }
 
 /* -------------------reset--------------- */
@@ -53,9 +53,9 @@ img {
 }
 button {
   display: block;
-  cursor: pointer;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 /* ---------------------reset end------------------ */
 
@@ -65,8 +65,8 @@ button {
 
 .container {
   width: 1158px;
-  padding: 0 15px;
   margin: 0 auto;
+  padding: 0 15px;
   outline: 1px solid red;
   outline-offset: -1px;
 }
@@ -80,15 +80,15 @@ button {
 
 .visually-hidden {
   position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+  border: 0;
   white-space: nowrap;
   clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 /* card set */
@@ -107,8 +107,8 @@ button {
 
 .logo {
   margin-right: 76px;
-  font-family: var(--secondary-font);
   font-size: 18px;
+  font-family: var(--secondary-font);
   line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -129,8 +129,8 @@ button {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
-  font-weight: 500;
   color: var(--dark);
+  font-weight: 500;
 }
 
 .current {
@@ -161,48 +161,48 @@ button {
 }
 .nav-container {
   display: flex;
-  align-items: center;
   gap: 40px;
+  align-items: center;
 }
 
 .contact-list-container {
   display: flex;
-  align-items: center;
   gap: 40px;
+  align-items: center;
   margin-left: auto;
 }
 
 /* -----------------------hero----------------------- */
 
 .hero {
-  background-color: var(--dark);
   padding: 188px 0;
+  background-color: var(--dark);
   text-align: center;
 }
 
 .main-title {
-  margin: 0 auto 48px;
   width: 496px;
+  margin: 0 auto 48px;
+  color: var(--primary-background);
   font-weight: 700;
   font-size: 56px;
-  letter-spacing: 0.02em;
   line-height: 1.07;
+  letter-spacing: 0.02em;
   text-align: center;
-  color: var(--primary-background);
 }
 
 .hero-btn {
   display: block;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
   padding: 16px 32px;
-  font-family: inherit;
+  background-color: var(--primary-brand);
+  color: var(--primary-background);
   font-weight: 500;
   font-size: 16px;
+  font-family: inherit;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: var(--primary-background);
-  background-color: var(--primary-brand);
 }
 
 .pointer {
@@ -211,8 +211,8 @@ button {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  color: var(--primary-background);
   background-color: var(--pressed-state);
+  color: var(--primary-background);
 }
 
 /* ------------------advantages------------------------ */
@@ -234,8 +234,8 @@ button {
 }
 
 .advantages-text {
-  line-height: 1.5;
   color: var(--text);
+  line-height: 1.5;
 }
 
 /* ----------------features---------------------- */
@@ -248,9 +248,9 @@ button {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
+  letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
-  letter-spacing: 0.02em;
 }
 
 /* ------------------------teem----------------------*/
@@ -263,9 +263,9 @@ button {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
+  letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
-  letter-spacing: 0.02em;
 }
 .teem-list {
   display: flex;
@@ -283,14 +283,14 @@ button {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  text-align: center;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .teem-list-profession {
+  color: var(--text);
   line-height: 1.5;
   text-align: center;
-  color: var(--text);
 }
 
 .soc-list {
@@ -309,19 +309,19 @@ button {
 .filter-btn {
   padding: 12px 24px;
   border: 1px solid var(--accent);
-  font-family: inherit;
+  background-color: var(--light);
+  color: var(--primary-brand);
   font-weight: 500;
   font-size: 16px;
+  font-family: inherit;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: var(--primary-brand);
-  background-color: var(--light);
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
-  color: var(--primary-background);
   background-color: var(--pressed-state);
+  color: var(--primary-background);
 }
 
 /* ---------------------examples------------------- */
@@ -339,8 +339,8 @@ button {
 }
 
 .examples-text {
-  line-height: 1.5;
   color: var(--text);
+  line-height: 1.5;
 }
 
 .examples-wrapper {
@@ -351,16 +351,16 @@ button {
 
 /* -----------------------------footer------------------------------- */
 .footer {
-  background-color: var(--dark);
   padding: 100px 0;
+  background-color: var(--dark);
 }
 
 .footer-logo {
   display: block;
   margin-bottom: 16px;
-  font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
+  font-family: var(--secondary-font);
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -372,6 +372,6 @@ button {
 
 .footer-text {
   width: 264px;
-  line-height: 1.5;
   color: var(--accent);
+  line-height: 1.5;
 }
